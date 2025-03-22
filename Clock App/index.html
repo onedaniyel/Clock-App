@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/app.css" />
+    <link rel="stylesheet" href="/reset.css" />
+    <script src="/node_modules/persian-date/dist/persian-date.js"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="buttons">
+        <button class="stopwatchBtn">stopwatch</button>
+        <button class="clockBtn">clock</button>
+        <button class="alarmBtn">alarm</button>
+        <button class="timerBtn">timer</button>
+        <button class="dateConverterBtn">Date Converter</button>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="stopwatch">
+        <div class="watch">
+          <p class="hour">00</p>
+          <span>:</span>
+          <p class="minute">00</p>
+          <span>:</span>
+          <p class="second">00</p>
+        </div>
+        <div class="stopwatch__bottuns">
+          <button class="start">start</button>
+          <button class="stop">stop</button>
+          <button class="reset">reset</button>
+        </div>
+      </div>
+      <div class="clock">
+        <div class="clock__wrapper">
+          <span class="clock__numbers"><p class="clock__number">1</p></span>
+          <span class="clock__numbers"><p class="clock__number">2</p></span>
+          <span class="clock__numbers"><p class="clock__number">3</p></span>
+          <span class="clock__numbers"><p class="clock__number">4</p></span>
+          <span class="clock__numbers"><p class="clock__number">5</p></span>
+          <span class="clock__numbers"><p class="clock__number">6</p></span>
+          <span class="clock__numbers"><p class="clock__number">7</p></span>
+          <span class="clock__numbers"><p class="clock__number">8</p></span>
+          <span class="clock__numbers"><p class="clock__number">9</p></span>
+          <span class="clock__numbers"><p class="clock__number">10</p></span>
+          <span class="clock__numbers"><p class="clock__number">11</p></span>
+          <span class="clock__numbers"><p class="clock__number">12</p></span>
+          <div class="hands-box">
+            <span class="hand clockHand-hour"></span>
+            <span class="hand clockHand-minute"></span>
+            <span class="hand clockHand-second"></span>
+          </div>
+        </div>
+      </div>
+      <div class="alarm show">
+        <input type="time" name="" id="" />
+      </div>
+      <div class="timer">
+        <div class="timer__watch">
+          <p class="timer__hour">00</p>
+          <span>:</span>
+          <p class="timer__minute">00</p>
+          <span>:</span>
+          <p class="timer__second">00</p>
+        </div>
+        <div class="selection">
+          <input type="number" class="selection__hour" placeholder="hour" />
+          <input type="number" class="selection__minute" placeholder="minute" />
+          <input type="number" class="selection__second" placeholder="second" />
+        </div>
+        <div class="timer__btn-section">
+          <button class="timerBtn-start">
+            <svg
+              class="w-[48px] h-[48px] text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8.6 5.2A1 1 0 0 0 7 6v12a1 1 0 0 0 1.6.8l8-6a1 1 0 0 0 0-1.6l-8-6Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <button class="timerBtn-pause">
+            <svg
+              class="w-[48px] h-[48px] text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm9-3a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0V9Zm4 0a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0V9Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <button class="timerBtn-reset">Reset</button>
+        </div>
+      </div>
+      <div class="date-converter">
+        <input type="date" class="date__input" />
+        <button class="convert__btn">convert</button>
+        <p class="convert__result">Result</p>
+      </div>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>
